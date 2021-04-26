@@ -33,4 +33,44 @@ text-decoration: none;
 }
 
 /* ----------------------- Listes ----------------------------*/
+/* --------------------Bouton modifier ---------------------- */
+.btn-grad2 {background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%)}
+.btn-grad2 {
+margin: 10px;
+padding: 15px 45px;
+text-align: center;
+text-transform: uppercase;
+transition: 0.5s;
+background-size: 200% auto;
+color: white;            
+box-shadow: 0 0 20px #eee;
+border-radius: 10px;
+display: block;
+}
 
+.btn-grad2:hover {
+background-position: right center; /* change the direction of the change here */
+color: #fff;
+text-decoration: none;
+}
+
+/* ---------------------Bouton supprimer --------------------- */
+.btn-grad3 {background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%)}
+.btn-grad3 {
+margin: 10px;
+padding: 15px 45px;
+text-align: center;
+text-transform: uppercase;
+transition: 0.5s;
+background-size: 200% auto;
+color: white;            
+box-shadow: 0 0 20px #eee;
+border-radius: 10px;
+display: block;
+}
+
+.btn-grad3:hover {
+background-position: right center; /* change the direction of the change here */
+color: #fff;
+text-decoration: none;
+}

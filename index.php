@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -28,20 +29,43 @@
     <div class="row justify-content-around">
         <div class="card col-sm-5 my-5 mx-2">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="row"  style="background-color:aqua">
+                    <h5 class="card-title px-1"><b>Courses</b></h5>
+                    <button class="btn btn-primary" type="submit"><i class="far fa-plus-square"></i></button>
+                </div>
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-            </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+            <div class="container">
+                <div class="row d-inline-flex">
+                    <ol>
+                        <li>
+                            Beurre
+                            <i class="fas fa-edit"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </li>
+                        <li>
+                            Sel
+                            <i class="fas fa-edit"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </li>
+                        <li>
+                            Lait
+                            <i class="fas fa-edit"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </li>
+                        <li>
+                            Eau
+                            <i class="fas fa-edit"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row card-body justify-content-around">
+                <a class="btn btn-grad2 px-2 col-xs-6 col-sm-5" href="#" role="button"><i class="fas fa-edit px-1"></i>Modifier</a>
+                <a class="btn btn-grad3 px-2 col-xs-6 col-sm-5" href="#" role="button"><i class="fas fa-trash-alt px-1"></i>Supprimer</a>
             </div>
         </div>
-    </div>
+    </div>    
 </div>
 
 
