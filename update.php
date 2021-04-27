@@ -16,7 +16,7 @@
     $db = Database::connect();
     $req = $db->query("SELECT * FROM `list` WHERE id={$_GET['id']}");
     $liste = $req->fetch();
-    
+
 if ($_POST) {
     $name = $_POST['name'];
     $color = $_POST['color'];
@@ -41,7 +41,6 @@ if ($_POST) {
             <div class="card-body">
                 <form method="post">
                     <h5 class="card-title">Nom</h5>
-                    <!-- TODO affichage de la liste ------------------------------------------------------------ -->
                     <input type="text" name="name" value="<?= $liste['name'] ?>"> 
                     <h5 class="card-title mt-3">Couleur de la liste</h5>
                     <input type="color" name="color" value="<?= $liste['color'] ?>">

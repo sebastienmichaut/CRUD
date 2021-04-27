@@ -24,7 +24,7 @@
     </div>
 <?php
     foreach ($db->query("SELECT * FROM `list`") as $liste) {
-        // echo "<p>{$liste['name']} {$liste['color']}</p>";
+
 ?>
 
     <div class="row justify-content-around">
@@ -39,24 +39,60 @@
                 <div class="row d-inline-flex">
                     <ol>
                         <li>
-                            Beurre
-                            <i class="fas fa-edit"></i>
-                            <i class="fas fa-trash-alt"></i>
+                            <div class="row mx-1">
+                                <span class="mx-1">Beurre</span>
+                                <div class="mx-1">
+                                    <input type="checkbox">
+                                </div>
+                                <div class="mx-1">
+                                    <a href=""><i class="fas fa-edit"></i></a>
+                                </div>                          
+                                <div class="mx-1">
+                                    <a href=""><i class="fas fa-trash-alt"></i></a>
+                                </div>
+                            </div>
                         </li>
                         <li>
-                            Sel
-                            <i class="fas fa-edit"></i>
-                            <i class="fas fa-trash-alt"></i>
+                            <div class="row mx-1">
+                                <span class="mx-1">Sel</span>
+                                <div class="mx-1">
+                                    <input type="checkbox">
+                                </div>
+                                <div class="mx-1">
+                                    <a href=""><i class="fas fa-edit"></i></a>
+                                </div>                          
+                                <div class="mx-1">
+                                    <a href=""><i class="fas fa-trash-alt"></i></a>
+                                </div>
+                            </div>
                         </li>
                         <li>
-                            Lait
-                            <i class="fas fa-edit"></i>
-                            <i class="fas fa-trash-alt"></i>
+                            <div class="row mx-1">
+                                <span class="mx-1">Lait</span>
+                                <div class="mx-1">
+                                    <input type="checkbox">
+                                </div>
+                                <div class="mx-1">
+                                    <a href=""><i class="fas fa-edit"></i></a>
+                                </div>                          
+                                <div class="mx-1">
+                                    <a href=""><i class="fas fa-trash-alt"></i></a>
+                                </div>
+                            </div>
                         </li>
                         <li>
-                            Eau
-                            <i class="fas fa-edit"></i>
-                            <i class="fas fa-trash-alt"></i>
+                            <div class="row mx-1">
+                                <span class="mx-1">Eau</span>
+                                <div class="mx-1">
+                                    <input type="checkbox">
+                                </div>
+                                <div class="mx-1">
+                                    <a href=""><i class="fas fa-edit"></i></a>
+                                </div>                          
+                                <div class="mx-1">
+                                    <a href=""><i class="fas fa-trash-alt"></i></a>
+                                </div>
+                            </div>
                         </li>
                     </ol>
                 </div>
