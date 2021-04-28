@@ -40,7 +40,7 @@ if ($_POST) {
             <div class="card-body">
                 <form method="post">
                     <h5 class="card-title">Nom</h5>
-                    <input type="text" name="title" placeholder="Nom de la tâche">
+                    <input type="text" name="title" placeholder="<?= $tache['title'] ?>">
                     <input class="btn btn-grad2 px-2 mt-3" type="submit" Value="Modifier la tâche">
                 </form>
             </div>

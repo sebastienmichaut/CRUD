@@ -43,13 +43,13 @@
                             <div class="row mx-1">
                                 <span class="mx-1"><?= $tache['title'] ?></span>
                                 <div class="mx-1">
-                                    <input type="checkbox">
+                                    <input type="checkbox" <?= $tache['completed'] ? "checked" : "" ?> class="checkbox" onchange="window.location.href='./checkbox.php?id=<?=$tache['id'] ?>'">
                                 </div>
                                 <div class="mx-1">
-                                    <a href="./update-tasks.php?id=<?=$tache['id'] ?>"><i class="fas fa-edit"></i></a>
+                                    <a href="./update_tasks.php?id=<?=$tache['id'] ?>"><i class="fas fa-edit"></i></a>
                                 </div>                          
                                 <div class="mx-1">
-                                    <a href=""><i class="fas fa-trash-alt text-danger"></i></a>
+                                    <a href="./delete_tasks.php?id=<?=$tache['id'] ?>"><i class="fas fa-trash-alt text-danger"></i></a>
                                 </div>
                             </div>
                         </li>
@@ -58,10 +58,10 @@
 ?>
                     </ol>
                 </div>
-            </div>
-            <div class="row card-body justify-content-around">
-                <a class="btn btn-grad2 px-2 col-xs-6 col-sm-5" href="./update.php?id=<?php echo $liste['id'] ?>" role="button"><i class="fas fa-edit px-1"></i>Modifier</a>
-                <a class="btn btn-grad3 px-2 col-xs-6 col-sm-5" href="./delete.php?id=<?php echo $liste['id'] ?>" role="button"><i class="fas fa-trash-alt px-1"></i>Supprimer</a>
+                <div class="row card-body justify-content-around">
+                    <a class="btn btn-grad2 px-2 col-xs-6 col-sm-5" href="./update.php?id=<?php echo $liste['id'] ?>" role="button"><i class="fas fa-edit px-1"></i>Modifier</a>
+                    <a class="btn btn-grad3 px-2 col-xs-6 col-sm-5" href="./delete.php?id=<?php echo $liste['id'] ?>" role="button"><i class="fas fa-trash-alt px-1"></i>Supprimer</a>
+                </div>
             </div>
         </div>
     
