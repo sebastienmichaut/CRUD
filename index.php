@@ -46,7 +46,7 @@
                                     <input type="checkbox">
                                 </div>
                                 <div class="mx-1">
-                                    <a href=""><i class="fas fa-edit"></i></a>
+                                    <a href="./update-tasks.php?id=<?=$tache['id'] ?>"><i class="fas fa-edit"></i></a>
                                 </div>                          
                                 <div class="mx-1">
                                     <a href=""><i class="fas fa-trash-alt text-danger"></i></a>

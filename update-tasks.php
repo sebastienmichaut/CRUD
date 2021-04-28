@@ -15,9 +15,11 @@
     $db = Database::connect();
     $tache_id = $_GET['id'];
     $req = $db->query("SELECT * FROM `taches` WHERE id= {$tache_id}");
+    $tache = $req->fetch();
+
 if ($_POST) {
     $title = $_POST['title'];
-    $sql = "INSERT INTO `taches` (title, list_id) VALUES ('{$title}', '{$list_id}')";
+    $sql = "UPDATE `taches` SET title='{$_POST['title']}' WHERE id={$tache_id}";
     // var_dump($sql);
     $db->query($sql);
     header('location:./index.php');
