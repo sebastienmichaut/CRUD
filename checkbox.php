@@ -7,7 +7,7 @@ $req =$db->query("SELECT * FROM `taches` WHERE id= {$tache_id}");
 $tache = $req->fetch();
 
 
-$completed = !$tache['completed'];
+$completed = $tache['completed'] == 1 ? 0 : 1;
 $sql = "UPDATE `taches` SET completed = $completed WHERE id={$tache_id}";
 // var_dump($sql);
 $db->query($sql);

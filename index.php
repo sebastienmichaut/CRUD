@@ -25,12 +25,19 @@
     <div class="row justify-content-around">
 <?php
     foreach ($db->query("SELECT * FROM `list`") as $liste) {
+            $req=$db->query("SELECT COUNT(*) as completed FROM `taches` WHERE completed = 1 AND list_id = {$liste['id']}");
+            $completedTasks = $req->fetch();
+            $req2=$db->query("SELECT COUNT(*) FROM `taches` WHERE list_id = {$liste['id']}");
+            $totalTasks = $req2->fetch();
 ?>
         <div class="card col-sm-5 my-5 mx-1">
             <div class="card-body">
                 <div class="row"  style="<?php echo"background-color: {$liste['color']};"?>">
                     <h5 class="card-title px-1"><b><?php echo $liste['name']?></b></h5>
                     <a href="./create_tasks.php?id=<?= $liste['id'] ?>" class="btn btn-primary"><i class="far fa-plus-square"></i></a>
+                    <div>
+                        <p class="mx-3"><b><?php echo "{$completedTasks['completed']} / {$totalTasks[0]} tâches" ?></b></p>
+                    </div>
                 </div>
             </div>
             <div class="container">
